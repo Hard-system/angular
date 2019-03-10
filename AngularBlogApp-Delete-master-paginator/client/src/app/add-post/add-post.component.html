@@ -1,0 +1,51 @@
+<script src="https://cdn.quilljs.com/1.2.6/quill.js"></script>
+<link href="https://cdn.quilljs.com/1.2.6/quill.snow.css" rel="stylesheet">
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content" style="width: 800px; align-self: auto;">
+            <div class="modal-header">
+
+
+
+                <h5 class="modal-title" id="exampleModalLabel">Update Post</h5>
+
+                <button type="button" #closeBtn class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Title</label>
+
+
+
+                        <input name="title" type="text" [(ngModel)]="post.title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter title">
+                    </div>
+
+
+                    <!-- <div class="quill" [quill]="config" (contentChange)="onContentChange($event)">
+                        <div class="quill-toolbar"> Optional custom toolbar </div>
+                        <input name="title" type="text" [(ngModel)]="post.title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter title">
+                         <p>Hello</p>
+
+                      </div> -->
+
+
+                    <div class="form-group" >
+                        <label for="exampleInputPassword1">Description</label>
+
+                        <!-- editor -->
+
+                          <!-- editor -->
+                          <textarea name="description" [(ngModel)]="post.description" class="form-control" id="exampleInputPassword1" placeholder="Write post ...." style="height: 370px;">
+                            </textarea>
+                    </div>
+                    <button (click)="addPost()" type="button" class="btn btn-primary">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

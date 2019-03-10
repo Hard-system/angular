@@ -1,0 +1,3503 @@
+
+  <header class="header clearfix">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <h3 class="navbar-brand">Stoyanov Blog<a href="https://www.linkedin.com/in/miroslav-s-997a0a60/"><img src="/assets/images/linkedIn.png"  style="width:50px;height:50px; "></a></h3>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link pointer"  (click)="redirectToHomePage()" >Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pointer" >Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle pointer"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Other
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item pointer" (click)="redirectToSqlErrors()">SQL ERRORS</a>
+              <a class="dropdown-item pointer" >Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item pointer" >Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    <h2>Oracle SQL Errors</h2>
+</header>
+
+  <div class="container-fluid" >
+
+    <div class="row" style="padding-top: 35px;">
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal1)">ORA-00001</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal2)">ORA-00051</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal3)">ORA-00068</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal4)">ORA-00257</button>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal5)">ORA-00018</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal6)">ORA-00054</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal7)">ORA-00071</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal8)">ORA-00301</button>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal9)">ORA-00020</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal10)">ORA-00057</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal11)">ORA-00078</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal12)">ORA-00304</button>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal13)">ORA-00023</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal14)">ORA-00058</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal15)">ORA-00100</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal16)">ORA-00361</button>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal17)">ORA-00028</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal18)">ORA-00060</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal19)">ORA-00107</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal20)">ORA-00401</button>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal21)">ORA-00034</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal22)">ORA-00063</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal23)">ORA-00201</button>
+          </div>
+          <div class="col-sm-3" style="visibility: hidden;">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal24)">EEEEEEEEE</button>
+          </div>
+
+      </div>
+      <hr style="color: black; border-width: 5px;">
+      <div class="row">
+
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal24)">ORA-00900</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal25)">ORA-00917</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal26)">ORA-00933</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal27)">ORA-00957</button>
+          </div>
+
+       </div>
+
+       <div class="row">
+
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal28)">ORA-00902</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal29)">ORA-00918</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal30)">ORA-00934</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal31)">ORA-00960</button>
+          </div>
+
+       </div>
+
+       <div class="row">
+
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal32)">ORA-00903</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal33)">ORA-00919</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal34)">ORA-00935</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal35)">ORA-00962</button>
+          </div>
+
+       </div>
+
+       <div class="row">
+
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal36)">ORA-00904</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal37)">ORA-00920</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal38)">ORA-00936</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal39)">ORA-00971</button>
+          </div>
+
+       </div>
+
+       <div class="row">
+
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal40)">ORA-00905</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal41)">ORA-00923</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal42)">ORA-00937</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal43)">ORA-00972</button>
+          </div>
+
+       </div>
+
+       <div class="row">
+
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal44)">ORA-00906</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal45)">ORA-00924</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal46)">ORA-00938</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal47)">ORA-00975</button>
+          </div>
+
+       </div>
+
+       <div class="row">
+
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal48)">ORA-00907</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal49)">ORA-00925</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal50)">ORA-00939</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal51)">ORA-00979</button>
+          </div>
+
+       </div>
+
+       <div class="row">
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal52)">ORA-00908</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal53)">ORA-00926</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal54)">ORA-00942</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal55)">ORA-00980</button>
+          </div>
+       </div>
+
+       <div class="row">
+
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal56)">ORA-00909</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal57)">ORA-00927</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal58)">ORA-00946</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal59)">ORA-00984</button>
+          </div>
+
+       </div>
+
+       <div class="row">
+
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal60)">ORA-00910</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal61)">ORA-00928</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal62)">ORA-00947</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal63)">ORA-00985</button>
+          </div>
+
+       </div>
+
+       <div class="row">
+
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal64)">ORA-00911</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal65)">ORA-00931</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal66)">ORA-00948</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal67)">ORA-00995</button>
+          </div>
+
+       </div>
+
+       <div class="row">
+
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal68)">ORA-00913</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal69)">ORA-00932</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal70)">ORA-00955</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" style="visibility: hidden" >EEEEEEEE</button>
+          </div>
+
+       </div>
+       <hr style="color: black; border-width: 5px;">
+       <div class="row">
+
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal71)">ORA-01000</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal72)">ORA-01012</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal73)">ORA-01035</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal74)">ORA-01089</button>
+          </div>
+
+       </div>
+
+       <div class="row">
+
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal75)">ORA-01001</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal76)">ORA-01013</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal77)">ORA-01037</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal78)">ORA-01109</button>
+          </div>
+
+       </div>
+
+       <div class="row">
+
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal79)">ORA-01002</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal80)">ORA-01014</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal81)">ORA-01039</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal82)">ORA-01113</button>
+        </div>
+
+     </div>
+
+     <div class="row">
+
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal83)">ORA-01004</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal84)">ORA-01017</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal85)">ORA-01040</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal86)">ORA-01114</button>
+      </div>
+
+   </div>
+
+   <div class="row">
+
+    <div class="col-sm-3">
+      <button type="button" class="btn btn-primary" (click)="openModal(modal87)">ORA-01005</button>
+    </div>
+    <div class="col-sm-3">
+      <button type="button" class="btn btn-primary" (click)="openModal(modal88)">ORA-01023</button>
+    </div>
+    <div class="col-sm-3">
+      <button type="button" class="btn btn-primary" (click)="openModal(modal89)">ORA-01042</button>
+    </div>
+    <div class="col-sm-3">
+      <button type="button" class="btn btn-primary" (click)="openModal(modal90)">ORA-01133</button>
+    </div>
+
+ </div>
+
+ <div class="row">
+
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" (click)="openModal(modal91)">ORA-01006</button>
+  </div>
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" (click)="openModal(modal92)">ORA-01031</button>
+  </div>
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" (click)="openModal(modal93)">ORA-01045</button>
+  </div>
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" (click)="openModal(modal94)">ORA-01200</button>
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" (click)="openModal(modal95)">ORA-01007</button>
+  </div>
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" (click)="openModal(modal96)">ORA-01033</button>
+  </div>
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" (click)="openModal(modal97)">ORA-01052</button>
+  </div>
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" (click)="openModal(modal98)">ORA-01234</button>
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" (click)="openModal(modal99)">ORA-01008</button>
+  </div>
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" (click)="openModal(modal100)">ORA-01034</button>
+  </div>
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" (click)="openModal(modal101)">ORA-01074</button>
+  </div>
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" style="visibility:hidden">EEEEEEEEE</button>
+  </div>
+
+</div>
+<hr style="color: black; border-width: 5px;">
+<div class="row">
+
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" (click)="openModal(modal102)">ORA-01400</button>
+  </div>
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" (click)="openModal(modal103)">ORA-01418</button>
+  </div>
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" (click)="openModal(modal104)">ORA-01433</button>
+  </div>
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" (click)="openModal(modal105)">ORA-01448</button>
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" (click)="openModal(modal106)">ORA-01401</button>
+  </div>
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" (click)="openModal(modal107)">ORA-01422</button>
+  </div>
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" (click)="openModal(modal108)">ORA-01434</button>
+  </div>
+  <div class="col-sm-3">
+    <button type="button" class="btn btn-primary" (click)="openModal(modal109)">ORA-01449</button>
+  </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-sm-3">
+      <button type="button" class="btn btn-primary" (click)="openModal(modal110)">ORA-01402</button>
+    </div>
+    <div class="col-sm-3">
+      <button type="button" class="btn btn-primary" (click)="openModal(modal111)">ORA-01423</button>
+    </div>
+    <div class="col-sm-3">
+      <button type="button" class="btn btn-primary" (click)="openModal(modal112)">ORA-01435</button>
+    </div>
+    <div class="col-sm-3">
+      <button type="button" class="btn btn-primary" (click)="openModal(modal113)">ORA-01452</button>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal114)">ORA-01403</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal115)">ORA-01424</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal116)">ORA-01436</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal117)">ORA-01453</button>
+      </div>
+
+    </div>
+
+
+  <div class="row">
+
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal118)">ORA-01404</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal119)">ORA-01425</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal120)">ORA-01437</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal121)">ORA-01454</button>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal122)">ORA-01405</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal123)">ORA-01426</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal124)">ORA-01438</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal125)">ORA-01461</button>
+        </div>
+
+      </div>
+
+  <div class="row">
+
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal126)">ORA-01406</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal127)">ORA-01427</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal128)">ORA-01439</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal129)">ORA-01465</button>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal130)">ORA-01407</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal131)">ORA-01428</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal132)">ORA-01440</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal133)">ORA-01468</button>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal134)">ORA-01408</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal135)">ORA-01429</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal136)">ORA-01441</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" (click)="openModal(modal137)">ORA-01471</button>
+          </div>
+
+        </div>
+
+  <div class="row">
+
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal138)">ORA-01416</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal139)">ORA-01430</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal140)">ORA-01442</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary" (click)="openModal(modal141)">ORA-01476</button>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal142)">ORA-01417</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal143)">ORA-01432</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal144)">ORA-01446</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-primary" (click)="openModal(modal145)">ORA-01451</button>
+        </div>
+
+      </div>
+      <hr style="color: black; border-width: 5px;">
+  </div>
+
+  <ng-template #modal1>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-00001 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p class="preventcopy">
+        <b>Cause</b><br>
+        You tried to execute an INSERT or UPDATE statement that has created a duplicate value in a field restricted by
+        a unique index.<br>
+        <b>Resolution</b><br>
+        The option(s) to resolve this Oracle error are:<br>
+
+        <b>Option #1</b><br>
+        Drop the unique constraint.<br>
+
+        <b>Option #2</b><br>
+        Change the constraint to allow duplicate values.<br>
+
+        <b>Option #3</b><br>
+        Modify your SQL so that a duplicate value is not created.
+      </p>
+    </div>
+  </ng-template>
+
+  <ng-template #modal2>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-00051 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <b> Cause</b><br>
+      You were waiting for a resource and you timed out. This may have been caused by an Oracle instance abnormally
+      terminating.<br>
+
+      <b>Resolution</b><br>
+      The option(s) to resolve this Oracle error are:<br>
+
+      <b>Option #1</b><br>
+      Restart the Oracle instance.<br>
+    </div>
+  </ng-template>
+
+  <ng-template #modal3>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-00068 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <b>Cause</b><br>
+      The value for the initialization parameter must be between the numbers specified in this error message.<br>
+
+      <b>Resolution</b><br>
+      The option(s) to resolve this Oracle error are:<br>
+
+      <b>Option #1</b><br>
+      Update the initialization parameter accordingly.<br>
+    </div>
+  </ng-template>
+
+  <ng-template #modal4>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-00257 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <b>Cause</b><br>
+      While trying to archive a redo log file, the ARCH process encountered an error.<br>
+
+      <b>Resolution</b><br>
+      The option(s) to resolve this Oracle error are:<br>
+
+      <b> Option #1</b><br>
+      This error can be caused when the destination device does not have enough storage space to store the redo log
+      file.<br>
+
+      <b>Option #2</b><br>
+      Check that the initialization parameter ARCHIVE_LOG_DEST in the initialization file is set correctly.<br>
+
+      It may be helpful to check the archiver trace file for more details on the problem.<br>
+
+      <b>Note:</b> If this problem is not resolved, Oracle will stop executing transactions.<br>
+    </div>
+  </ng-template>
+
+  <ng-template #modal5>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-00018 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <b>Cause</b><br>
+      You tried to execute a statement that requested a resource. Since the maximum number of sessions have been
+      reached, Oracle will not process any new resource requests.<br>
+
+      <b>Resolution</b><br>
+      The option(s) to resolve this Oracle error are:<br>
+
+      <b>Option #1</b><br>
+      You can wait a few minutes and try to re-execute the statement(s).<br>
+
+      <b>Option #2</b><br>
+      You can shut down Oracle, increase the SESSIONS parameter in the initialization parameter file, and restart
+      Oracle.
+    </div>
+  </ng-template>
+
+  <ng-template #modal6>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-00054 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <b>Cause</b><br>
+      You tried to execute a LOCK TABLE or SELECT FOR UPDATE command with the NOWAIT keyword but the resource was
+      unavailable.<br>
+
+      Or you tried to DROP a COLUMN using the ALTER TABLE command and received the error.<br>
+
+      <b>Resolution</b><br>
+      The option(s) to resolve this Oracle error are:<br>
+
+      <b>Option #1</b><br>
+      Wait and try the command again after a few minutes.<br>
+
+      <b>Option #2</b><br>
+      Execute the command without the NOWAIT keyword.<br>
+
+      <b>Option #3</b><br>
+      If the error occurred while trying to DROP a COLUMN, be sure to backup the data. Then TRUNCATE the table and
+      execute the DROP COLUMN command again.
+    </div>
+  </ng-template>
+
+  <ng-template #modal7>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-00071 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <b>Cause</b><br>
+      You tried to specify a process number that was not valid.<br>
+
+      <b>Resolution</b><br>
+      The option(s) to resolve this Oracle error are:<br>
+
+      <b>Option #1</b><br>
+      Specify a process number that is between 1 and the number listed in the error message.
+    </div>
+  </ng-template>
+
+  <ng-template #modal8>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-00301 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <b>Cause</b><br>
+      You tried to create a redo log file, but the creation failed.<br>
+
+      <b>Resolution</b><br>
+      The option(s) to resolve this Oracle error are:<br>
+
+      <b>Option #1</b><br>
+      Check if there is enough storage space on the device.<br>
+
+      <b>Option #2</b><br>
+      Check if the device is available.<br>
+
+      <b>Option #3</b><br>
+      Check if the file name is correct.<br>
+
+      <b>TIP:</b> Once the cause of the problem has been corrected, re-execute the command.
+    </div>
+  </ng-template>
+
+  <ng-template #modal9>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-00020 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <b>Cause</b><br>
+      You tried to execute a statement that requested a resource. Since the maximum number of processes have been
+      reached, Oracle will not process any new requests.<br>
+
+      <b>Resolution</b>Resolution
+      The option(s) to resolve this Oracle error are:<br>
+
+      <b>Option #1</b><br>
+      You can wait a few minutes and try to re-execute the statement(s).<br>
+
+      <b>Option #2</b><br>
+      You can shut down Oracle, increase the PROCESSES parameter in the initialization parameter file, and restart
+      Oracle.
+    </div>
+  </ng-template>
+
+  <ng-template #modal10>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-00057 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <b>Cause</b><br>
+        The number of temporary tables has reached or exceeded the number of temporary table locks allowed by Oracle.<br>
+
+        <b>Resolution</b><br>
+        The option(s) to resolve this Oracle error are:<br>
+
+        <b>Option #1</b><br>
+        This error is most commonly caused by a SQL statement that has performed a very large sort. The sort has created a number of temporary tables that has exceeded the limit specified in Oracle.<br>
+
+        To correct this problem, increase the TEMPORARY_TABLE_LOCKS parameter in Oracle and perform a restart in Oracle.
+    </div>
+  </ng-template>
+
+  <ng-template #modal11>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-00078 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <b>Cause</b><br>
+        You tried to dump a variable by name, but your system does not support this option.<br>
+
+        <b>Resolution</b><br>
+        The option(s) to resolve this Oracle error are:<br>
+
+        <b>Option #1</b><br>
+        Try the PEEK command.
+    </div>
+  </ng-template>
+
+  <ng-template #modal12>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-00304 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <b>Cause</b><br>
+        You tried to start an Oracle instance by using an INSTANCE_NUMBER parameter value that is already in use.<br>
+
+        <b>Resolution</b><br>
+        The option(s) to resolve this Oracle error are:<br>
+
+        <b>Option #1</b><br>
+        Modify the INSTANCE_NUMBER initialization parameter in the initialization file to use another number. Then try restarting the instance.<br>
+
+        <b>Option #2</b><br>
+        Wait for recovery to finish for that instance number.
+    </div>
+  </ng-template>
+
+  <ng-template #modal13>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-00023 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <b>Cause</b><br>
+        You tried to detach a session but it contains references to the process memory (PGA) through any of: an open network connection, a very large context area, or operating system privileges.<br>
+
+        <b>Resolution</b><br>
+        The option(s) to resolve this Oracle error are:<br>
+
+        <b>Option #1</b><br>
+        If the session has an open network connection or a very large context area, you can try closing the session's database links and cursors.<br>
+
+        <b>Option #2</b><br>
+        If the session has operating system privileges, you will not be able to detach the session.
+    </div>
+  </ng-template>
+
+  <ng-template #modal14>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-00058 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <b>Cause</b><br>
+        You tried to start a database whose DB_BLOCK_SIZE parameter value in the initialization file does not match the value used when the database was created.<br>
+
+        <b>Resolution</b><br>
+        The option(s) to resolve this Oracle error are:<br>
+
+        <b>Option #1</b><br>
+        Make sure that you are mounting the correct database.<br>
+
+        <b>Option #2</b><br>
+        Make sure that you are using the correct initialization file.<br>
+
+        <b>Option #3</b><br>
+        You may need to change the DB_BLOCK_SIZE parameter in the initialization file.<br>
+    </div>
+  </ng-template>
+
+  <ng-template #modal15>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-00100 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <b>Cause</b><br>
+        An application tried to access data that was either inaccessible or does not exist.<br>
+
+        <b>Resolution</b><br>
+        The option(s) to resolve this Oracle error are:<br>
+
+        <b>Option #1</b><br>
+        This error must be handled within the application. Modify the application accordingly.
+    </div>
+  </ng-template>
+
+  <ng-template #modal16>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-00361 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <b>Cause</b><br>
+        You tried to remove the last member of a redo log group.<br>
+
+        <b>Resolution</b><br>
+        The option(s) to resolve this Oracle error are:<br>
+
+        <b>Option #1</b><br>
+        You can try deleting the log using the DROP log file command.
+    </div>
+  </ng-template>
+
+  <ng-template #modal17>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00028 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          Your session has been killed by a privileged user (such as a DBA).<br>
+
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+
+          <b>Option #1</b><br>
+          Check with your DBA. Your session may have been killed due to a scheduled outage or other activity.
+      </div>
+  </ng-template>
+
+  <ng-template #modal18>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00060 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a statement, but your session was deadlocked because another session had the same resource locked. The statement(s) that you tried to execute have been rolled back.<br>
+
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+
+          <b>Option #1</b><br>
+          You can wait a few minutes and try to re-execute the statement(s) that were rolled back.<br>
+
+          <b>Option #2</b><br>
+          You can execute a ROLLBACK and re-execute all statements since the last COMMIT was executed.
+      </div>
+  </ng-template>
+
+  <ng-template #modal19>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00107 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          The network listener process was not been successfully started.<br>
+
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+
+          <b>Option #1</b><br>
+          Make sure that the network configuration file is set up correctly.<br>
+
+          <b>Option #2</b><br>
+          Make sure that the client-side address is set up correctly.<br>
+
+          <b>Option #3</b><br>
+          Make sure that the listener initialization parameter file is set up correctly.
+      </div>
+  </ng-template>
+
+  <ng-template #modal20>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00401 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to specify a value in the initialization file that is not supported by this release of Oracle.<br>
+
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+
+          <b>Option #1</b><br>
+          You need to enter a value that is supported by your version of Oracle, or remove the parameter value from the initialization file so that the default value is used.
+      </div>
+  </ng-template>
+
+  <ng-template #modal21>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00034 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to issue a COMMIT or ROLLBACK command from a PLSQL function, procedure, or package. However, COMMIT and ROLLBACK have been disabled with the following command:<br>
+
+          ALTER SESSION DISABLE COMMIT IN PROCEDURE<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+
+          <b>Option #1</b><br>
+          Do not issue a COMMIT or ROLLBACK command from your PLSQL function, procedure, or package while disabled.<br>
+
+          <b>Option #2</b><br>
+          Enable COMMIT or ROLLBACK for this PLSQL session.
+      </div>
+  </ng-template>
+
+  <ng-template #modal22>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00063 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          The value of the LOG_FILES parameter must be as large as the highest number log that exists.<br>
+
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+
+          <b>Option #1</b><br>
+          Increase the LOG_FILES parameter value in the initialization file and then perform an Oracle warm start.
+      </div>
+  </ng-template>
+
+  <ng-template #modal23>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00201 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          The control file was created by a version of Oracle that is different than the version of Oracle that you are currently running.<br>
+
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+
+          <b>Option #1</b><br>
+          Restart Oracle with a version of Oracle that is the same as the control file.<br>
+
+          <b>Option #2</b><br>
+          Create a new control file using the CREATE CONTROLFILE command.
+      </div>
+  </ng-template>
+
+  <ng-template #modal24>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00900 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          The statement that you've tried to execute is not a valid SQL statement.<br>
+
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+
+          <b>Option #1</b><br>
+          This error commonly occurs when you are trying to create an Oracle procedure and the Procedural Option is not installed.<br>
+
+          To determine if the Procedural Option has been installed, open an Oracle session using SQL*Plus. If the PL/SQL banner does not display, then you know that the Procedural Option has not been installed.
+      </div>
+  </ng-template>
+
+  <ng-template #modal25>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00917 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a statement, but you missed a required comma.<br>
+
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+
+          <b>Option #1</b><br>
+          Try fixing the statement and re-executing.
+      </div>
+  </ng-template>
+
+  <ng-template #modal26>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00933 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a SQL statement with an inappropriate clause.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+
+          <b>Option #1</b><br>
+          You may have executed a INSERT statement with a ORDER BY clause. To resolve this, remove the ORDER BY clause and re-execute the INSERT statement.<br>
+          <b>Option #2</b><br>
+          You may have tried to execute a DELETE statement with a ORDER BY clause. To resolve this, remove the ORDER BY clause and re-execute the DELETE statement.
+      </div>
+  </ng-template>
+
+  <ng-template #modal27>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00957 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute either a CREATE TABLE or INSERT statement where the same column name was listed more than once.<br>
+
+          Or you tried to execute a UPDATE statement where the same column name was listed more than once in the SET clause.<br>
+
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+
+          <b>Option #1</b><br>
+          If this error occurred during a CREATE TABLE, correct the statement so that each column listed in the CREATE TABLE statement is unique.<br>
+          <b>Option #2</b><br>
+          If this error occurred during an INSERT statement, correct the statement so that each column listed is unique.<br>
+          <b>Option #3</b><br>
+          If this error occurred during an UPDATE statement, correct the statement so that each column listed in the SET clause is unique.
+      </div>
+  </ng-template>
+
+  <ng-template #modal28>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00902 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a CREATE TABLE or ALTER TABLE statement that contained an invalid datatype.<br>
+
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+
+          <b>Option #1</b><br>
+          This error occurs when you try to execute a CREATE TABLE or ALTER TABLE statement that contains a datatype that does not exist.
+
+      </div>
+  </ng-template>
+
+  <ng-template #modal29>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00918 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a SQL statement that joined two or more tables, where a column with the same name exists in both tables.<br>
+
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+
+          <b>Option #1</b><br>
+          Prefix the column with the table name and then re-execute the statement.
+      </div>
+  </ng-template>
+
+  <ng-template #modal30>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00934 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a SQL statement that included one of the group functions (ie: MIN Function, MAX Function, SUM Function, COUNT Function) in either the WHERE clause or the GROUP BY clause.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Try removing the group function from the WHERE clause or GROUP BY clause. If required, you can move the group function to the HAVING clause.<br>
+          <b>Option #2</b>
+          You could also try moving the group by function to a SQL subquery.
+      </div>
+  </ng-template>
+
+  <ng-template #modal31>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00960 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a SELECT statement where a column with the same name is listed in the SELECT list and then ambiguously defined within the ORDER BY clause.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Try prefixing the column that is ambiguously defined in the ORDER BY clause with the table name.<br>
+          <b>For Example:</b><br>
+          SELECT suppliers.supplier_id, orders.supplier_id<br>
+          FROM suppliers<br>
+          INNER JOIN orders<br>
+          ON suppliers.supplier_id = orders.supplier_id<br>
+          ORDER BY supplier_id;<br>
+          <b>This can be resolved if you add:</b><br>
+          ORDER BY suppliers.supplier_id;<br>
+      </div>
+  </ng-template>
+
+  <ng-template #modal32>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00903 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a SQL statement that included an invalid table name or the table name does not exist.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Rewrite your SQL to include a valid table name. To be a valid table name the following criteria must be met:<br>
+          The table name must begin with a letter.<br>
+          The table name can not be longer than 30 characters.<br>
+          The table name must be made up of alphanumeric characters or the following special characters: $, _, and #.<br>
+          The table name can not be a reserved word.
+      </div>
+  </ng-template>
+
+  <ng-template #modal33>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00919 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to call a function, but the name you used was not a valid Oracle function.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Correct the spelling of the Oracle function that you wish to call.<br>
+          View a complete listing of Oracle functions.<br>
+          <b>Option #2</b><br>
+          Try using the dual table if you wish to call a function without querying a table.<br>
+          For example, if you had created a custom function called TestFunction and you wanted to call this function, you could try the following:<br>
+          SELECT TestFunction()<br>
+          FROM dual;<br>
+      </div>
+  </ng-template>
+
+  <ng-template #modal34>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00935 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          This is an internal error message.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Contact customer support.
+      </div>
+  </ng-template>
+
+  <ng-template #modal35>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00962 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a SQL statement that contained more than 255 GROUP BY or ORDER BY expressions.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Re-write your SQL statement so that there are no more than 255 Group By or Order By expressions.
+      </div>
+  </ng-template>
+
+  <ng-template #modal36>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00904 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a SQL statement that included an invalid column name or the column name is missing. This commonly occurs when you reference an invalid alias in a SELECT statement.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Rewrite your SQL to include a valid column name. To be a valid column name the following criteria must be met:<br>
+          The column name must begin with a letter.<br>
+          The column name can not be longer than 30 characters.<br>
+          The column name must be made up of alphanumeric characters or the following special characters: $, _, and #. If the column name uses any other characters, it must be enclosed in double quotation marks.<br>
+          The column name can not be a reserved word.
+      </div>
+  </ng-template>
+
+  <ng-template #modal37>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00920 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a SQL statement, but the WHERE clause contained an invalid relational operator.<br>
+
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+
+          Option #1<br>
+          Correct the WHERE clause. Valid relational operators are as follows:<br>
+          =<br>
+          !=<br>
+          ^=<br>
+          <><br>
+          <<br>
+          <=<br>
+          ><br>
+          >=<br>
+          ALL<br>
+          ANY<br>
+          BETWEEN<br>
+          NOT BETWEEN<br>
+          EXISTS<br>
+          NOT EXISTS<br>
+          IN<br>
+          NOT IN<br>
+          IS NULL<br>
+          IS NOT NULL<br>
+          LIKE<br>
+          NOT LIKE
+      </div>
+  </ng-template>
+
+  <ng-template #modal38>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00936 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a SQL statement but you omitted a part of the syntax.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+
+          <b>Option #1</b><br>
+          This error most commonly occurs when you try to execute a SELECT statement and forget to the list of the columns in the SELECT statement.
+      </div>
+  </ng-template>
+
+  <ng-template #modal39>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00971 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a UPDATE statement, but you missed the SET keyword.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Re-write your UPDATE statement to include the SET clause.<br>
+          <b>For example</b>, if you tried to execute the following UPDATE statement:<br>
+          UPDATE suppliers<br>
+          supplier_id = 1000;<br>
+          You could correct this error by including the SET keyword as follows:<br>
+          UPDATE suppliers<br>
+          SET supplier_id = 1000;
+      </div>
+  </ng-template>
+
+  <ng-template #modal40>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00905 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a statement, but you missed a required keyword.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Try fixing the statement and re-executing.<br>
+          If you need to check out the proper syntax for your SQL statement, you can view the following pages:<br>
+          SELECT Statement<br>
+          INSERT Statement<br>
+          UPDATE Statement<br>
+          DELETE Statement<br>
+          <b>Some other useful pages are:</b><br>
+          IN Condition<br>
+          UNION Query<br>
+          UNION ALL Query<br>
+          Subqueries<br>
+          Joins
+      </div>
+  </ng-template>
+
+  <ng-template #modal41>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00923 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a SELECT statement, and you either missed or misplaced the FROM keyword.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          This error can occur when executing a SELECT statement that is missing the FROM keyword.<br>
+          <b>Option #2</b><br>
+          This error can also occur if you use an alias, but do not include the alias in double quotation marks.<br>
+          <b>Option #3</b><br>
+          This error can also occur if you add a calculated column to a SELECT * statement.<br>
+          <b>Option #4</b><br>
+          You can also generate this error by having an unbalanced set of parenthesis.
+      </div>
+  </ng-template>
+
+  <ng-template #modal42>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00937 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a SELECT statement that included a GROUP BY function (ie: MIN Function, MAX Function, SUM Function, COUNT Function), but was missing the GROUP BY clause.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Rewrite the SELECT statement so that the column or expression listed in the SELECT list is also found in the GROUP BY clause.<br>
+          <b>Option #2</b><br>
+          Remove the GROUP BY function (ie: MIN Function, MAX Function, SUM Function, COUNT Function) from the SELECT statement.<br>
+          <b>Option #3</b><br>
+          Remove the expression from the SELECT list that was not in the GROUP BY clause.
+      </div>
+  </ng-template>
+
+  <ng-template #modal43>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00972 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to reference a table, cluster, view, index, synonym, tablespace, or username with a value that was longer than 30 characters.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Names for tables, clusters, views, indexes, synonyms, tablespaces, and usernames must be 30 characters or less. You must shorten the name to no more than 30 characters for these objects.
+      </div>
+  </ng-template>
+
+  <ng-template #modal44>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00906 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a statement, but you missed entering a required left parenthesis.<br>
+
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+
+          <b>Option #1</b><br>
+          Statements such as CREATE TABLE, INSERT Statements, Subqueries, and IN condition require items to be enclosed in parentheses. Try fixing the statement and re-executing.
+      </div>
+  </ng-template>
+
+  <ng-template #modal45>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00924 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a GROUP BY, ORDER BY, CONNECT BY, or GRANT (with IDENTIFIED) statement and missed the BY keyword.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Try adding the missing BY keyword and re-execute the statement.<br>
+          <b>For example, if you tried to execute the following:</b><br>
+          SELECT department, SUM(sales) AS "Total sales"<br>
+          FROM order_details<br>
+          GROUP department;<br>
+          <b>You could correct this error with the following statement:</b><br>
+          SELECT department, SUM(sales) AS "Total sales"<br>
+          FROM order_details<br>
+          GROUP BY department;
+      </div>
+  </ng-template>
+
+  <ng-template #modal46>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00938 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to call an Oracle function, but you supplied too few arguments for the function.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          This error can be corrected by providing the correct number of arguments when calling the Oracle function.
+      </div>
+  </ng-template>
+
+  <ng-template #modal47>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00975 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to add two dates together. This is not allowed. You can only add numeric values to dates.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Re-write your expression so that a numeric value is added to the date.
+      </div>
+  </ng-template>
+
+  <ng-template #modal48>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00907 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You entered a left parenthesis, but missed the closing right parenthesis; or you entered invalid data within the parentheses.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          All parentheses must be entered in pairs. You must correct the statement and re-execute.
+      </div>
+  </ng-template>
+
+  <ng-template #modal49>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00925 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a INSERT statement and missed the INTO keyword.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Try adding the missing INTO keyword and re-execute the statement.
+      </div>
+  </ng-template>
+
+  <ng-template #modal50>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00939 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to call an Oracle function, but you supplied too many arguments for the function.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          This error can be corrected by providing the correct number of arguments when calling the Oracle function.
+      </div>
+  </ng-template>
+
+  <ng-template #modal51>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00979 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a SELECT statement that included a GROUP BY function (ie: MIN Function, MAX Function, SUM Function, COUNT Function) and an expression in the SELECT list that was not in the GROUP BY clause.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Rewrite the SELECT statement so that the column or expression listed in the SELECT list is also found in the GROUP BY clause.<br>
+          <b>Option #2</b><br>
+          Remove the GROUP BY function (ie: MIN Function, MAX Function, SUM Function, COUNT Function) from the SELECT statement.<br>
+          <b>Option #3</b><br>
+          Remove the expression from the SELECT list that was not in the GROUP BY clause.
+      </div>
+  </ng-template>
+
+  <ng-template #modal52>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00908 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a SQL statement, but you missed entering the NULL keyword.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          This error can occur if you try to execute a SQL statement using the IS NULL condition or IS NOT NULL condition, but miss entering the NULL keyword.
+      </div>
+  </ng-template>
+
+  <ng-template #modal53>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00926 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a INSERT statement and missed the VALUES keyword.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Try adding the missing VALUES keyword or use a sub-select. Then re-execute the statement.
+      </div>
+  </ng-template>
+
+  <ng-template #modal54>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00942 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a SQL statement that references a table or view that either does not exist, that you do not have access to, or that belongs to another schema and you didn't reference the table by the schema name.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          If this error occurred because the table or view does not exist, you will need to create the table or view.<br>
+          <b>Option #2</b><br>
+          If this error occurred because you do not have access to the table or view, you will need to have the owner of the table/view, or a DBA grant you the appropriate privileges to this object.<br>
+          <b>Option #3</b><br>
+          If this error occurred because the table/view belongs to another schema and you didn't reference the table by the schema name, you will need to rewrite your SQL to include the schema name.
+      </div>
+  </ng-template>
+
+  <ng-template #modal55>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00980 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to reference a synonym that no longer exists.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Reference the object directly (include schema name, if appropriate).<br>
+          <b>Option #2</b><br>
+          Re-create the synonym.
+      </div>
+  </ng-template>
+
+  <ng-template #modal56>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00909 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to call an Oracle function, but you used the incorrect number of arguments for the function.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          This error can be corrected by providing the correct number of arguments when calling the Oracle function.
+      </div>
+  </ng-template>
+
+  <ng-template #modal57>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00927 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a statement, but missed an equal sign. This can happen in either the SET clause of a UPDATE statement or in a search condition.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          If this error occurred in the SET clause of an UPDATE statement, add the missing equal sign and re-execute the statement.<br>
+          <b>Option #2</b><br>
+          If this error occurred in a search condition when you are trying to determine a "not equals" condition, add the missing equal sign and re-execute the statement.
+      </div>
+  </ng-template>
+
+  <ng-template #modal58>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00946 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a GRANT command and missed the TO keyword.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Try adding the missing TO keyword and re-execute the command.
+      </div>
+  </ng-template>
+
+  <ng-template #modal59>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00984 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a SQL statement that included a column name where it was not permitted.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          This error most commonly occurs when you try to include a column name in the VALUES clause of a INSERT statement.
+      </div>
+  </ng-template>
+
+  <ng-template #modal60>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00910 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to create a VARCHAR2 or CHAR column, but you specified a length that exceeded Oracle's limits.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Enter a maximum length for the VARCHAR2 or CHAR column that falls within Oracle's limits.
+      </div>
+  </ng-template>
+
+  <ng-template #modal61>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00928 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to create an Oracle VIEW, but missed the SELECT keyword.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Correct the CREATE VIEW statement and re-execute it.
+      </div>
+  </ng-template>
+
+  <ng-template #modal62>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00947 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a SQL statement that required two equal sets of values, but the second set contains fewer values than the first set.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          This error can occur when you are performing an INSERT and the values entered are less in number than the columns that you are inserting into.<br>
+          <b>Option #2</b><br>
+          This error can also occur when you perform a sub-select in a WHERE clause or HAVING clause but the sub-select returns too few columns.
+
+      </div>
+  </ng-template>
+
+  <ng-template #modal63>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00985 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute an operation that probably contained a syntax error.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          You need to correct the syntax error and re-execute the operation.
+      </div>
+  </ng-template>
+
+  <ng-template #modal64>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00911 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a SQL statement that included a special character.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          This error occurs when you try to use a special character in a SQL statement. If a special character other than $, _, and # is used in the name of a column or table, the name must be enclosed in double quotations.<br>
+          <b>Option #2</b><br>
+          This error may occur if you've pasted your SQL into your editor from another program. Sometimes there are non-printable characters that may be present. In this case, you should try retyping your SQL statement and then re-execute it.<br>
+          <b>Option #3</b><br>
+          This error occurs when a special character is used in a SQL WHERE clause and the value is not enclosed in single quotations.
+      </div>
+  </ng-template>
+
+  <ng-template #modal65>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00931 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          This is an internal error message.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Contact customer support.
+      </div>
+  </ng-template>
+
+  <ng-template #modal66>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00948 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute an ALTER CLUSTER statement, but this statement is no longer supported.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Try adding your cluster from an existing table.
+      </div>
+  </ng-template>
+
+  <ng-template #modal67>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00995 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to CREATE or DROP a synonym, but the name of the synonym that you used was either missing or invalid.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Correct the name of the synonym.<br>
+          Synonym names must meet the following criteria:<br>
+          Must begin with a letter.<br>
+          Must consist of alphanumeric characters or the following special characters: $, _, and #.<br>
+          Can not be reserved words.<br>
+          Must be no more than 30 characters in length.
+      </div>
+  </ng-template>
+
+  <ng-template #modal68>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00913 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a SQL statement that required two sets of equal values, but you entered more items in the second set than was in the first set.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          This error often occurs when you are performing a INSERT statement and enter more values in the VALUES clause than the number of columns that you listed.<br>
+          <b>Option #2</b><br>
+          This error can also occur when your subquery in the WHERE clause returns too many columns.
+      </div>
+  </ng-template>
+
+  <ng-template #modal69>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00932 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to perform an operation between two different datatypes, but the datatypes are not compatible.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Correct the operation so that the datatypes are compatible. You may want to use a conversion function such as: TO_DATE function, TO_NUMBER function, or TO_CHAR function. For a complete listing of our Oracle functions, go to our Oracle functions webpage.<br>
+          One example of this error is if you try to use the LIKE condition with a LONG datatype.<br>
+          To correct this error, you can do one of the following:<br>
+          Not use the LIKE condition in your SQL (against the LONG datatype field).<br>
+          Consider modifying your table so that the supplier_name field is either a VARCHAR2 or CHAR field.<br>
+          Try writing a custom PLSQL function to convert a LONG to a VARCHAR2.<br>
+          <b>Option #2</b><br>
+          This error can also occur if you try to use an Oracle function on a LONG datatype.<br>
+          Unfortunately, you can not use Oracle functions on a LONG data type.<br>
+          To correct this error, you can do one of the following:<br>
+          Not use Oracle functions in your SQL (against the LONG datatype field).<br>
+          Consider modifying your table so that the supplier_name field is either a VARCHAR2 or CHAR field.<br>
+          Try writing a custom PLSQL function to convert a LONG to a VARCHAR2.
+      </div>
+  </ng-template>
+
+  <ng-template #modal70>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-00955 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to create a table, VIEW, index, synonym or other object with a name that is already in use.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Rename your object that you are trying to create so that it is unique.<br>
+          <b>Option #2</b><br>
+          Drop the existing object and create the new object.
+      </div>
+  </ng-template>
+
+  <ng-template #modal71>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01000 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to open too many cursors at once. Each user is restricted to the number of cursors open based on the OPEN_CURSORS parameter in the initialization file.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Try to close cursors that you are no longer using before opening new cursors.<br>
+          <b>Option #2</b><br>
+          You may need to shut down Oracle, increase the OPEN_CURSORS parameter in the initialization file, and restart Oracle.
+      </div>
+  </ng-template>
+
+  <ng-template #modal72>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01012 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a call to Oracle before logging in.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Log onto Oracle by calling OLON or OLOGON.
+      </div>
+  </ng-template>
+
+  <ng-template #modal73>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01035 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to connect to Oracle, but logins are not allowed because the Oracle instance was started in restricted mode. Only users with RESTRICTED SESSION privileges can log in.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Contact your DBA and have the Oracle instance restarted without the restriction.<br>
+          <b>Option #2</b><br>
+          Contact your DBA and ask for RESTRICTED SESSION privileges.
+      </div>
+  </ng-template>
+
+  <ng-template #modal74>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01089 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          Your DBA has initiated the SHUTDOWN IMMEDIATE command. This will shutdown Oracle and terminate all active operations.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Wait until Oracle has been restarted by your DBA.
+      </div>
+  </ng-template>
+
+  <ng-template #modal75>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01001 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <b>Cause</b><br>
+        You tried to reference a cursor that does not yet exist. This may have happened because:<br>
+        You've executed a FETCH cursor before OPENING the cursor.<br>
+        You've executed a CLOSE cursor before OPENING the cursor.<br>
+        You've executed a FETCH cursor after CLOSING the cursor.<br>
+        <b>Resolution</b><br>
+        The option(s) to resolve this Oracle error are:<br>
+        <b>Option #1</b><br>
+        Make sure you haven't CLOSEd the cursor and are still referencing it in your code.<br>
+        <b>Option #2</b><br>
+        Make sure you've OPENed the cursor before calling a FETCH cursor or CLOSE cursor.<br>
+        <b>Option #3</b><br>
+        If everything else is fine, you may need to increase the AREASIZE and MAXOPENCURSORS options.
+      </div>
+  </ng-template>
+
+  <ng-template #modal76>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01013 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <b>Cause</b><br>
+        You interrupted an Oracle operation by pressing Ctrl+C or by canceling the operation through another method (ie: front-end application).<br>
+        <b>Resolution</b><br>
+        The option(s) to resolve this Oracle error are:<br>
+        <b>Option #1</b><br>
+        The current operation has been terminated by the user. There is no course of action to take. This message is informational only.<br>
+        <b>Option #2</b><br>
+        This error may also have been caused by a timeout in a sql pass-through query. To resolve this error, properties of the timeout parameter need to be changed to a higher value.
+      </div>
+  </ng-template>
+
+  <ng-template #modal77>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01037 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <b>Cause</b><br>
+        You tried to process a cursor whose SQL was so complex that it used up all available memory.<br>
+        <b>Resolution</b><br>
+        The option(s) to resolve this Oracle error are:<br>
+        <b>Option #1</b><br>
+        Try to re-write your cursor SQL to simplify it.
+      </div>
+  </ng-template>
+
+  <ng-template #modal78>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01109 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <b>Cause</b><br>
+        You tried to perform an operation on a database that was not opened.<br>
+        <b>Resolution</b><br>
+        The option(s) to resolve this Oracle error are:<br>
+        <b>Option #1</b><br>
+        Open the database and then retry the operation.
+      </div>
+  </ng-template>
+
+  <ng-template #modal79>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-01002 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <b>Cause</b><br>
+      You tried to perform a FETCH at a time when it is not allowed.<br>
+      <b>Resolution</b><br>
+      The option(s) to resolve this Oracle error are:<br>
+      <b>Option #1</b><br>
+      This error may occur if you perform a FETCH on an active cursor after all records have been fetched.<br>
+      <b>Option #2</b><br>
+      This error may also occur if you perform a FETCH on a SELECT FOR UPDATE after a COMMIT has been issued.<br>
+      You may want to consider utilizing cursor attributes to avoid these situations.
+    </div>
+</ng-template>
+
+<ng-template #modal80>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01014 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to connect to Oracle, but a shutdown is in progress. Users can not log into Oracle while it is being shutdown.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Wait until Oracle is back up and then try logging in again.
+  </div>
+</ng-template>
+
+<ng-template #modal81>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01039 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to access someone else's VIEW without having the appropriate privileges to the underlying objects of the view.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Have the Oracle DBA grant you privileges to the underlying objects of the view.<br>
+    <b>Option #2</b><br>
+    Do not reference the view.
+  </div>
+</ng-template>
+
+<ng-template #modal82>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01113 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to open a datafile, but the file needs media recovery.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Apply media recovery to the datafile and then try to re-open it.
+  </div>
+</ng-template>
+
+<ng-template #modal83>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01004 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to perform an automatic logon to Oracle, but your system does not support this.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Try logging on again by providing a username and password.
+  </div>
+</ng-template>
+
+<ng-template #modal84>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01017 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to log into Oracle with an invalid username/password combination.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Log into Oracle with a correct username/password combination. If the username and password are entered together, the correct format is:<br>
+    username/password
+  </div>
+</ng-template>
+
+<ng-template #modal85>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01040 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to logon to Oracle using a password that either contained a multi-byte character or a character that is not part of the US7ASCII character set.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Enter a valid password and retry logon.
+  </div>
+</ng-template>
+
+<ng-template #modal86>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01114 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to write to a file, but the device where the file resides is offline.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    You need to restore access to this device and then try re-writing to the file.
+  </div>
+</ng-template>
+
+<ng-template #modal87>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01005 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to log onto Oracle, but provided an invalid password.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Try logging on again, but provide a valid password.
+  </div>
+</ng-template>
+
+<ng-template #modal88>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01023 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to reference a cursor, but the cursor is not open.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Open the cursor and retry the operation.
+  </div>
+</ng-template>
+
+<ng-template #modal89>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01042 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to detach from an Oracle session while there was an open cursor.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Close all cursors and then retry detaching the session.
+  </div>
+</ng-template>
+
+<ng-template #modal90>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01133 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to execute an operation that specified a redo log file, but the filename was too long.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Reduce the length of the redo log filename and re-execute the operation.
+  </div>
+</ng-template>
+
+<ng-template #modal91>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01006 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to issue a bind call for a variable that was not listed in the corresponding SQL statement.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Modify your bind call to reference a variable that was listed in the corresponding SQL statement. Variables must be prefixed with either a colon (:) or an ampersand (&) to be referenced in a BIND call, OBIND, or OBINDN.<br>
+    <b>Option #2</b><br>
+    This error may also be caused by a mismatch between a precompiler program and the SQLLIB library.
+  </div>
+</ng-template>
+
+<ng-template #modal92>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01031 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You attempted to perform an operation for which you do not have the appropriate privileges. Some of the more common causes are:<br>
+    You tried to change an Oracle username or password without having the appropriate privileges.<br>
+    You tried to perform an UPDATE to a table, but you only have SELECT access to the table.<br>
+    You tried to start up an Oracle database using CONNECT INTERNAL.<br>
+    You tried to install an Oracle database without having the appropriate privileges to the operating-system.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    You can have the Oracle DBA grant you the appropriate privileges that you are missing.<br>
+    <b>Option #2</b><br>
+    You can have the Oracle DBA execute the operation for you.<br>
+    <b>Option #3</b><br>
+    If you are having trouble starting up Oracle, you may need to add the Oracle user to the dba group.
+  </div>
+</ng-template>
+
+<ng-template #modal93>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01045 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to log into Oracle with a username that has not been granted the CREATE SESSION privilege.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Have the Oracle DBA grant the username the CREATE SESSION privilege.<br>
+    <b>Option #2</b><br>
+    Try logging into Oracle with a different username that has the CREATE SESSION privilege.
+  </div>
+</ng-template>
+
+<ng-template #modal94>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01200 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    A file that you tried to access is smaller in size than what the file header and control file have recorded.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    The file has been truncated. Try restoring the file from a backup.
+  </div>
+</ng-template>
+
+<ng-template #modal95>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01007 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to reference a variable that was not in the SELECT clause.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    This error can occur in OCI when the value for the position parameter is not a value between 1 and the number of variables in the SELECT clause.<br>
+    <b>Option #2</b><br>
+    This error can occur in SQL*Forms or SQL*Report when you specify more variables in the INTO clause than there are values in the SELECT clause.
+  </div>
+</ng-template>
+
+<ng-template #modal96>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01033 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You have attempted to log onto Oracle while Oracle was being either shut down or started up.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Wait until the Oracle database has been properly restarted before attempting to log in.
+  </div>
+</ng-template>
+
+<ng-template #modal97>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01052 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You have LOG_ARCHIVE_MIN_SUCCEED_DEST set to 2, while LOG_ARCHIVE_DUPLEX_DEST is not specified.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Set LOG_ARCHIVE_MIN_SUCCEED_DEST to 1, or specify a value for LOG_ARCHIVE_DUPLEX_DEST.
+  </div>
+</ng-template>
+
+<ng-template #modal98>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01234 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to end an online backup of a file, but the file is being used.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    If there is an instance of Oracle running that has the file open, you can try ending the online backup by executing the ALTER TABLESPACE command.<br>
+    <b>Option #2</b><br>
+    Otherwise, if a recovery or rename operation is active on this file, you'll have to wait until these operations have been completed. Then you can try again.
+  </div>
+</ng-template>
+
+<ng-template #modal99>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01008 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to execute a SQL statement that contained substitution variables where all variables were not bound.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    In OCI, try using an OBIND or OBINDN call to substitute the values.
+  </div>
+</ng-template>
+
+<ng-template #modal100>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01034 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to access Oracle, but Oracle was not started up.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    This error may occur because the operating system variable pointing to the instance was not properly defined.<br>
+    <b>Option #2</b><br>
+    This error may also have occurred because the SGA requires more space.
+  </div>
+</ng-template>
+
+<ng-template #modal101>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01074 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to shutdown Oracle from inside a logon session.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Log off Oracle, then try shutting down Oracle.
+  </div>
+</ng-template>
+
+<ng-template #modal102>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01400 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to insert a NULL value into a column that does not accept NULL values.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Correct your INSERT statement so that you do not insert a NULL value into a column that is defined as NOT NULL.
+  </div>
+</ng-template>
+
+<ng-template #modal103>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01418 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You have referenced an index that does not exist in an ALTER INDEX, DROP INDEX, or VALIDATE INDEX command.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Make sure that your index exists before referencing it in an ALTER INDEX, DROP INDEX, or VALIDATE INDEX command.
+  </div>
+</ng-template>
+
+<ng-template #modal104>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01433 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to create a synonym whose name is the same as an existing synonym, table, view, or cluster.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Select a name that has not already been used by a synonym, table, view, or cluster and then rerun your CREATE SYNONYM command with this new name.
+  </div>
+</ng-template>
+
+<ng-template #modal105>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01448 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to execute a ALTER TABLE MODIFY attempting to change the data type of an indexed column to a LONG datatype. Columns with the LONG datatype can not be indexed.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Drop all indexes that reference the column that you wish to change to a LONG datatype.<br>
+    <b>Option #2</b><br>
+    Select a different column to index.
+  </div>
+</ng-template>
+
+<ng-template #modal106>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01401 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to insert a value into a column that exceeds the maximum width for the column.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Correct your SQL to truncate the value so that it fits within the field. You can always try the SUBSTR function to truncate the value.<br>
+    <b>Option #2</b><br>
+    Modify your table definition to allow for a larger value in a field. This can be done with a ALTER TABLE command.
+  </div>
+</ng-template>
+
+<ng-template #modal107>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01422 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to execute a SELECT INTO statement and more than one row was returned.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Rewrite your SELECT INTO statement so that only one row is returned.<br>
+    <b>Option #2</b><br>
+    Replace your SELECT INTO statement with a cursor.
+  </div>
+</ng-template>
+
+<ng-template #modal108>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01434 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to drop a private synonym that does not exist.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Check to make sure that you specified the private synonym name correctly.<br>
+    <b>Option #2</b><br>
+    Your synonym may be a public synonym, not a private synonym.
+  </div>
+</ng-template>
+
+<ng-template #modal109>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01449 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <b>Cause</b><br>
+    You tried to execute a ALTER TABLE MODIFY command to change a column from NULL to NOT NULL, but the column currently contains NULL values in one or more records.<br>
+    <b>Resolution</b><br>
+    The option(s) to resolve this Oracle error are:<br>
+    <b>Option #1</b><br>
+    Either delete the records that contain NULL values or perform an UPDATE to change the NULL values to non-NULL values.
+  </div>
+</ng-template>
+
+<ng-template #modal110>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">ORA-01402 Error</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+      <b>Cause</b><br>
+      You tried to INSERT or UPDATE a record in a view that contained a WITH CHECK OPTION. The resulting INSERT or UPDATE violates the WHERE clause of the view.<br>
+      <b>Resolution</b><br>
+      The option(s) to resolve this Oracle error are:<br>
+      <b>Option #1</b><br>
+      Try viewing the source code for the view, including the WHERE clause. You can then try to correct your original SQL statement.
+      If it is necessary to perform your original INSERT or UPDATE, try re-writing your SQL statement to access the underlying tables directly instead of using the view.
+  </div>
+</ng-template>
+
+<ng-template #modal111>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-01423 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <b>Cause</b><br>
+        You tried to execute an exact fetch and an error was encountered.<br>
+        <b>Resolution</b><br>
+        The option(s) to resolve this Oracle error are:<br>
+        <b>Option #1</b><br>
+        This error message is always accompanied by a second error message that is more descriptive. Correct the error based on the second error message.
+    </div>
+  </ng-template>
+
+  <ng-template #modal112>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01435 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to reference a user that does not exist. This most likely occurred in a GRANT or REVOKE statement.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Check to make sure that the user exists.
+      </div>
+    </ng-template>
+
+  <ng-template #modal113>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01452 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a CREATE UNIQUE INDEX statement on one or more columns that contain duplicate values.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          If the entries do not need to be unique, you can remove the UNIQUE keyword from your CREATE UNIQUE INDEX statement and rerun the command.<br>
+          <b>Option #2</b><br>
+          If the entries need to be unique, delete all entries from the table that create duplicate values. Then re-execute your CREATE UNIQUE INDEX statement.
+      </div>
+    </ng-template>
+
+  <ng-template #modal114>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01403 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried one of the following:<br>
+          You executed a SELECT INTO statement and no rows were returned.<br>
+          You referenced an uninitialized row in a table.<br>
+          You read past the end of file with the UTL_FILE package.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Terminate processing of the data.
+      </div>
+    </ng-template>
+
+    <ng-template #modal115>
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">ORA-01424 Error</h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <b>Cause</b><br>
+            You tried to execute a LIKE condition using an escape character, but you the character following the escape character was not % or _.<br>
+            <b>Resolution</b><br>
+            The option(s) to resolve this Oracle error are:<br>
+            <b>Option #1</b><br>
+            Try modifying your LIKE condition to use % or _ as the character that follows the escape character.
+        </div>
+      </ng-template>
+
+  <ng-template #modal116>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01436 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          An infinite loop was created by the condition specified in the CONNECT BY clause.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          This error occurs when the condition in the CONNECT BY clause selects the next record that is a descendent of itself. This creates a circular reference or infinite loop.<br>
+          Correct the CONNECT BY clause to remove the circular reference.
+      </div>
+    </ng-template>
+
+    <ng-template #modal117>
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">ORA-01453 Error</h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <b>Cause</b><br>
+            You tried to process a transaction where the SET TRANSACTION was not the first statement.<br>
+            <b>Resolution</b><br>
+            The option(s) to resolve this Oracle error are:<br>
+            <b>Option #1</b><br>
+            COMMIT the current transaction and then execute the SET TRANSACTION statement.<br>
+            <b>Option #2</b><br>
+            ROLLBACK the current transaction and then execute the SET TRANSACTION statement.
+        </div>
+      </ng-template>
+
+  <ng-template #modal118>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01404 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to increase the length of a column that is used in an index. This made the concatenated index larger than its maximum allowed size of 255.<br>
+          The size of the index is calculated as follows:<br>
+          Date fields are a length of 7.<br>
+          Character fields are their defined length.<br>
+          Numeric fields are a length of 22.<br>
+          The total index length is calculated as the sum of the individual fields as defined above + the number of columns in the index.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          You can drop the index and then increase the length of the column. The only problem with this method is that you will no longer be able to re-create your index.
+      </div>
+    </ng-template>
+
+    <ng-template #modal119>
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">ORA-01425 Error</h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <b>Cause</b><br>
+            You tried to execute a LIKE condition using an escape character, but you tried to define the escape character as a string longer than 1 character.<br>
+            <b>Resolution</b><br>
+            The option(s) to resolve this Oracle error are:<br>
+            <b>Option #1</b><br>
+            Try modifying your LIKE condition to use an escape character that is one character long.
+        </div>
+      </ng-template>
+
+
+  <ng-template #modal120>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01437 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to use a CONNECT BY clause while joining more than one table in the SELECT statement. If you use a CONNECT BY clause, you can only query one table.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Remove either the join or the CONNECT BY clause from your SELECT statement.
+      </div>
+    </ng-template>
+
+
+    <ng-template #modal121>
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">ORA-01454 Error</h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <b>Cause</b><br>
+            You tried to convert a non-numeric column into a number value, but the column contained non-numeric characters and could not be converted.<br>
+            <b>Resolution</b><br>
+            The option(s) to resolve this Oracle error are:<br>
+            <b>Option #1</b><br>
+            Make sure that the values in the column only contain the following:<br>
+            Numbers<br>
+            (+) or (-) sign<br>
+            Decimal point<br>
+            Scientific notation (E or e)
+        </div>
+      </ng-template>
+
+  <ng-template #modal122>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01405 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a FETCH, but the INTO clause returned a NULL value.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Try using the NVL function to substitutes a value when a null value is encountered.<br>
+          <b>Option #2</b><br>
+          Try re-writing your cursor so that no NULL values are returned.
+      </div>
+    </ng-template>
+
+    <ng-template #modal123>
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">ORA-01426 Error</h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <b>Cause</b><br>
+            You tried to evaluate an expression that resulted in a numeric overflow (or underflow).<br>
+            <b>Resolution</b><br>
+            The option(s) to resolve this Oracle error are:<br>
+            <b>Option #1</b><br>
+            Re-write your expression using fewer operands.<br>
+            <b>Option #2</b><br>
+            Make sure that your expression does not evaluate to infinity.
+        </div>
+      </ng-template>
+
+      <ng-template #modal124>
+          <div class="modal-header">
+            <h4 class="modal-title pull-left">ORA-01438 Error</h4>
+            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <b>Cause</b><br>
+              You tried to assign a numeric value to a column, but the value was larger than the column will allow. This occurred during either an INSERT or an UPDATE statement.<br>
+              <b>Resolution</b><br>
+              The option(s) to resolve this Oracle error are:<br>
+              <b>Option #1</b><br>
+              Assign a smaller precision value to the column.<br>
+              <b>Option #2</b><br>
+              Modify the definition of the table to allow for a higher precision number in the column. This can be done with a ALTER TABLE statement.
+          </div>
+        </ng-template>
+
+        <ng-template #modal125>
+            <div class="modal-header">
+              <h4 class="modal-title pull-left">ORA-01461 Error</h4>
+              <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <b>Cause</b><br>
+                You tried to insert a LONG value into a column that is not a LONG datatype.<br>
+                <b>Resolution</b><br>
+                The option(s) to resolve this Oracle error are:<br>
+                <b>Option #1</b><br>
+                You can not insert a LONG value into a column that is not defined as LONG. Modify your INSERT statement accordingly.
+            </div>
+          </ng-template>
+
+    <ng-template #modal126>
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">ORA-01406 Error</h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <b>Cause</b><br>
+            In a host language program, a FETCH was forced to truncate a column value.<br>
+            <b>Resolution</b><br>
+            The option(s) to resolve this Oracle error are:<br>
+            <b>Option #1</b><br>
+            Try modifying the program to store a larger buffer value.
+        </div>
+      </ng-template>
+
+      <ng-template #modal127>
+          <div class="modal-header">
+            <h4 class="modal-title pull-left">ORA-01427 Error</h4>
+            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <b>Cause</b><br>
+              You tried to execute a SQL statement that contained a SQL subquery that returns more than one row.<br>
+              <b>Resolution</b><br>
+              The option(s) to resolve this Oracle error are:<br>
+              <b>Option #1</b><br>
+              Rewrite your query so that the subquery only returns one row.<br>
+              <b>Option #2</b><br>
+              Change your query to use one of the following with your subquery results:
+              ANY<br>
+              ALL<br>
+              IN<br>
+              NOT IN
+          </div>
+        </ng-template>
+
+        <ng-template #modal128>
+            <div class="modal-header">
+              <h4 class="modal-title pull-left">ORA-01439 Error</h4>
+              <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <b>Cause</b><br>
+                You tried to execute a ALTER TABLE MODIFY statement to change the datatype of a column, but the column contained data. You can only modify the datatype of a column whose values are all NULL.<br>
+                <b>Resolution</b><br>
+                The option(s) to resolve this Oracle error are:<br>
+                <b>Option #1</b><br>
+                Execute an UPDATE statement to change all values in that column to NULL.<br>
+                <b>Option #2</b><br>
+                Execute a DELETE statement to remove all rows from the table.
+            </div>
+          </ng-template>
+
+          <ng-template #modal129>
+              <div class="modal-header">
+                <h4 class="modal-title pull-left">ORA-01465 Error</h4>
+                <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <b>Cause</b><br>
+                  You tried to reference a ROWID, but it contained invalid characters.<br>
+                  <b>Resolution</b><br>
+                  The option(s) to resolve this Oracle error are:<br>
+                  <b>Option #1</b><br>
+                  This error generally occurs when you perform an UPDATE after a SELECT FOR UPDATE statement. Examine the ROWID value returned from the SELECT FOR UPDATE and enter the value in the exactly the same format and surrounded by single quotes.
+              </div>
+            </ng-template>
+
+  <ng-template #modal130>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01407 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to update a column to a NULL value but the column will not accept NULL values.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Correct your UPDATE statement so that you do not UPDATE a column with a NULL value when the column is defined as NOT NULL.
+      </div>
+    </ng-template>
+
+    <ng-template #modal131>
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">ORA-01428 Error</h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <b>Cause</b><br>
+            You tried to execute a mathematical function but the parameter passed into the function was not a valid value.<br>
+            <b>Resolution</b><br>
+            The option(s) to resolve this Oracle error are:<br>
+            <b>Option #1</b><br>
+            Re-write your function parameters using values that are valid for the function. See all Oracle functions.
+        </div>
+      </ng-template>
+
+<ng-template #modal132>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-01440 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <b>Cause</b><br>
+        You tried to execute a ALTER TABLE MODIFY statement on a numeric column to decrease precision or scale, but the column contained data. You can only modify the numeric column whose values are all NULL.<br>
+        <b>Resolution</b><br>
+        The option(s) to resolve this Oracle error are:<br>
+        <b>Option #1</b><br>
+        Execute an UPDATE statement to change all values in that column to NULL.<br>
+        <b>Option #2</b><br>
+        Execute a DELETE statement to remove all rows from the table.
+    </div>
+  </ng-template>
+
+  <ng-template #modal133>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01468 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a SQL statement that joins two tables and both tables were outer joined. When joining two tables, only one of the tables can be outer joined.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Rewrite your SQL so that only one of the tables is an outer join table.
+      </div>
+    </ng-template>
+
+    <ng-template #modal134>
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">ORA-01408 Error</h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <b>Cause</b><br>
+            You tried to create an index on a set of columns in a table, but you've already indexed this set of columns.<br>
+            <b>Resolution</b><br>
+            The option(s) to resolve this Oracle error are:<br>
+            <b>Option #1</b><br>
+            Correct your CREATE INDEX statement to reference a set of columns that have not already been indexed.
+        </div>
+      </ng-template>
+
+      <ng-template #modal135>
+          <div class="modal-header">
+            <h4 class="modal-title pull-left">ORA-01429 Error</h4>
+            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <b>Cause</b><br>
+              There was no data segment defined to store the overflow.<br>
+              <b>Resolution</b><br>
+              The option(s) to resolve this Oracle error are:<br>
+              <b>Option #1</b><br>
+              Define a data segment and retry the operation.
+          </div>
+        </ng-template>
+
+        <ng-template #modal136>
+            <div class="modal-header">
+              <h4 class="modal-title pull-left">ORA-01441 Error</h4>
+              <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <b>Cause</b><br>
+                You tried to execute a ALTER TABLE MODIFY statement on a character column to decrease its size, but the column contained data. You can only modify the character column whose values are all NULL.<br>
+                <b>Resolution</b><br>
+                The option(s) to resolve this Oracle error are:<br>
+                <b>Option #1</b><br>
+                Execute an UPDATE statement to change all values in that column to NULL.<br>
+                <b>Option #2</b><br>
+                Execute a DELETE statement to remove all rows from the table.
+            </div>
+          </ng-template>
+
+          <ng-template #modal137>
+              <div class="modal-header">
+                <h4 class="modal-title pull-left">ORA-01471 Error</h4>
+                <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <b>Cause</b><br>
+                  You tried to create a private synonym with the same name as the object that it is referencing.<br>
+                  <b>Resolution</b><br>
+                  The option(s) to resolve this Oracle error are:<br>
+                  <b>Option #1</b><br>
+                  Select a synonym name for the private synonym that has not been already used by another object.
+              </div>
+            </ng-template>
+
+  <ng-template #modal138>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01416 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to join two tables, but you performed an outer join on both tables to each other. This has created a circular outer join between the two tables.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Correct your SQL so that you are not outer joining both tables to each other. You can only perform an outer join one way.
+      </div>
+    </ng-template>
+
+<ng-template #modal139>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-01430 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <b>Cause</b><br>
+        You tried to add a column to a table, but the column name already exists in that table.<br>
+        <b>Resolution</b><br>
+        The option(s) to resolve this Oracle error are:<br>
+        <b>Option #1</b><br>
+        Rewrite your ALTER TABLE command to create a column with a unique name. Each column name must be unique within a table.
+    </div>
+  </ng-template>
+
+  <ng-template #modal140>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01442 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to execute a ALTER TABLE MODIFY statement to change a column to NOT NULL, but the column is already set to NOT NULL.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          The ALTER TABLE statement is unnecessary since your column is already set to NOT NULL.
+      </div>
+    </ng-template>
+
+    <ng-template #modal141>
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">ORA-01476 Error</h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <b>Cause</b><br>
+            You tried to divide a number by zero.<br>
+            <b>Resolution</b><br>
+            The option(s) to resolve this Oracle error are:<br>
+            <b>Option #1</b><br>
+            Correct your code so that you do not divide a number by zero.
+        </div>
+      </ng-template>
+
+      <ng-template #modal142>
+          <div class="modal-header">
+            <h4 class="modal-title pull-left">ORA-01417 Error</h4>
+            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <b>Cause</b><br>
+              You tried to perform an outer join to the same table from more than one other table.<br>
+              <b>Resolution</b> <br>
+              The option(s) to resolve this Oracle error are:<br>
+              <b>Option #1</b><br>
+              Correct your SQL so that you are only performing an outer join to the same table from only one other table.
+          </div>
+        </ng-template>
+
+<ng-template #modal143>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ORA-01432 Error</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <b>Cause</b><br>
+        You tried to drop a public synonym that does not exist.<br>
+        <b>Resolution</b><br>
+        The option(s) to resolve this Oracle error are:<br>
+        <b>Option #1</b><br>
+        Check to make sure that you specified the public synonym name correctly.<br>
+        <b>Option #2</b><br>
+        Your synonym may be a private synonym, not a public synonym.
+    </div>
+  </ng-template>
+
+  <ng-template #modal144>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">ORA-01446 Error</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <b>Cause</b><br>
+          You tried to create a view that included a ROWID in the SELECT statement as well as a clause such as DISTINCT clause or GROUP BY clause. This is not allowed.<br>
+          <b>Resolution</b><br>
+          The option(s) to resolve this Oracle error are:<br>
+          <b>Option #1</b><br>
+          Since the DISTINCT or GROUP BY causes the records in the view to not correspond directly to the underlying physical records, the ROWID values can not be returned.<br>
+          Either remove the DISTINCT or GROUP BY clause,<br>
+          OR<br>
+          Remove the ROWID column from the the SELECT statement.
+      </div>
+    </ng-template>
+
+    <ng-template #modal145>
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">ORA-01451 Error</h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <b>Cause</b><br>
+            You tried to execute a ALTER TABLE MODIFY attempting to change a column to allow NULL values, but the column either already allows NULL values or the column is used in a primary key or check constraint and can not accept NULL values.<br>
+            <b>Resolution</b><br>
+            The option(s) to resolve this Oracle error are:<br>
+            <b>Option #1</b><br>
+            Drop the primary key or check constraint index that is preventing you for changing the column to allow NULL values.<br>
+            <b>Option #2</b><br>
+            The column already allows NULL values and no action is required.
+        </div>
+      </ng-template>
+
+      <ng-template #modal146>
+          <div class="modal-header">
+            <h4 class="modal-title pull-left">EEEEEEEEEE</h4>
+            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+          </div>
+        </ng-template>
+
